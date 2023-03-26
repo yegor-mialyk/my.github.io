@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include head-custom.html %}
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <ul>
+          </ul>
+        </nav>
+      </div>
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+        </div>
+
+        {{ content }}
+
+      </section>
+
+      <hr>
+      <span class="credits left">Copyright (C) 1995-2023 Yegor Mialyk. All Rights Reserved.</span>
+      <span class="credits right">Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+
+    </div>
+  </body>
+</html>
